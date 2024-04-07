@@ -8,29 +8,6 @@
 // In a longer project I like to put these in a separate file
 
 // define a class
-function main() {
-  const fillers = {
-    chef: ["Gourmet Guru", "Veggie Virtuoso", "Culinary Wizard", "Plant-Based Pioneer", "Kitchen Magician", "Green Gastronome", "Eco Chef", "Salad Sorcerer", "Herb Whisperer", "Gastronomic Genius"],
-    action: ["whip up", "craft", "create", "conjure", "prepare", "assemble", "compose", "devise", "invent", "produce"],
-    dish: ["a hearty vegetable stew", "an exotic fruit salad", "a savory mushroom risotto", "crispy tofu tacos", "a refreshing quinoa salad", "spicy lentil curry", "roasted root vegetables", "vegan sushi rolls", "a colorful beet burger", "delectable jackfruit sliders"],
-    ingredient: ["avocado", "kale", "quinoa", "tofu", "tempeh", "lentils", "jackfruit", "mushrooms", "beets", "chickpeas", "sweet potatoes", "almonds"],
-    spice: ["turmeric", "cumin", "coriander", "paprika", "cardamom", "ginger", "basil", "oregano", "thyme", "rosemary", "masala"],
-    challenge: ["the ultimate taste test", "a five-course feast", "an impromptu potluck", "a cooking competition", "a vegan banquet", "a plant-based picnic", "a sustainable eating workshop", "a health-conscious dinner party", "a culinary exhibition", "a gourmet cooking show"],
-    reward: ["endless gratitude from the taste testers", "a feature in a culinary magazine", "a trophy for outstanding creativity", "the title of Plant-Based Maestro", "recognition in a chef's hall of fame", "a book deal for a vegetarian cookbook", "a guest spot on a cooking show", "a scholarship to a culinary institute", "a year's supply of organic ingredients", "a gourmet kitchen makeover"],
-  };
-  
-  
-  const template = `Greetings, $chef!
-  
-  Your mission, should you choose to accept it, involves a culinary challenge of the highest order. Your task is to $action $dish using a selection of ingredients including $ingredient and a hint of $spice.
-  
-  This dish will be your entry in $challenge, where you will showcase your skills and creativity. 
-  
-  Should you succeed, you will be rewarded with $reward. This is your chance to shine and prove that vegetarian cuisine is not only delicious but also an art form in itself!
-  
-  Bon appétit!
-  `;
-
 class MyProjectClass {
   // constructor function
   constructor(param1, param2) {
@@ -54,5 +31,26 @@ function main() {
 }
 
 //let's get this party started - uncomment me
-//main();
+function main() {
+  const fillers = {
+    chef: ["Gourmet Guru", "Veggie Virtuoso", "Culinary Wizard", "Plant-Based Pioneer", "Kitchen Magician", "Green Gastronome", "Eco Chef", "Salad Sorcerer", "Herb Whisperer", "Gastronomic Genius"],
+    action: ["whip up", "craft", "create", "conjure", "prepare", "assemble", "compose", "devise", "invent", "produce"],
+    dish: ["a hearty vegetable stew", "an exotic fruit salad", "a savory mushroom risotto", "crispy tofu tacos", "a refreshing quinoa salad", "spicy lentil curry", "roasted root vegetables", "vegan sushi rolls", "a colorful beet burger", "delectable jackfruit sliders"],
+    ingredient: ["avocado", "kale", "quinoa", "tofu", "tempeh", "lentils", "jackfruit", "mushrooms", "beets", "chickpeas", "sweet potatoes", "almonds"],
+    spice: ["turmeric", "cumin", "coriander", "paprika", "cardamom", "ginger", "basil", "oregano", "thyme", "rosemary", "masala"],
+    challenge: ["the ultimate taste test", "a five-course feast", "an impromptu potluck", "a cooking competition", "a vegan banquet", "a plant-based picnic", "a sustainable eating workshop", "a health-conscious dinner party", "a culinary exhibition", "a gourmet cooking show"],
+    reward: ["endless gratitude from the taste testers", "a feature in a culinary magazine", "a trophy for outstanding creativity", "the title of Plant-Based Maestro", "recognition in a chef's hall of fame", "a book deal for a vegetarian cookbook", "a guest spot on a cooking show", "a scholarship to a culinary institute", "a year's supply of organic ingredients", "a gourmet kitchen makeover"],
+  };
+  
+  
+  const template = `Greetings, $chef!
+  
+  Your mission, should you choose to accept it, involves a culinary challenge of the highest order. Your task is to $action $dish using a selection of ingredients including $ingredient and a hint of $spice.
+  
+  This dish will be your entry in $challenge, where you will showcase your skills and creativity. 
+  
+  Should you succeed, you will be rewarded with $reward. This is your chance to shine and prove that vegetarian cuisine is not only delicious but also an art form in itself!
+  
+  Bon appétit!
+  `;
 }
