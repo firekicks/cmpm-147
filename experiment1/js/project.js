@@ -1,6 +1,6 @@
-// project.js - purpose and description here
-// Author: Your Name
-// Date:
+// project.js - Simple recipe generator made using glitch.
+// Author: Atri Mehta
+// Date: 4/7/2024
 
 // NOTE: This is how we might start a basic JavaaScript OOP project
 
