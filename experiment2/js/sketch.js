@@ -38,7 +38,6 @@ function setup() {
   starsLayer = createGraphics(width, height * 0.4);
   starsLayer.colorMode(RGB);
 
-  // Initial static drawing
   background(skyTop);
   setGradient(0, 0, width, height, skyTop, skyBottom);
   drawSun();  
