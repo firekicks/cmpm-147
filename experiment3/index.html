@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 3 - Sun and Dark</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -32,12 +32,25 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 3 - Alternate Worlds</h1>
 
 			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
-				</div>
+				<button id="reseedButton">
+					reseed
+				  </button>
+				  <span id="seedReport"></span>
+				  <hr />
+				  <span id="canvasContainer" style="margin: 10px;"></span>
+				  <textarea cols="20" rows="20" id="asciiBox" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+				
+				  <button id="reseedButton2">
+					reseed
+				  </button>
+				  <span id="seedReport2"></span>
+				  <hr />
+				  <span id="canvasContainer2" style="margin: 10px;"></span>
+				  <textarea cols="20" rows="20" id="asciiBox2" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+				
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
@@ -45,17 +58,19 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>This project features procedural terrain generation system designed for creating dynamic landscapes in virtual environments. Leveraging Perlin noise and structured grid manipulation, the system offers a framework for simulating natural and constructed terrains with interactive weather effects, making it ideal for games, simulations, or any virtual world-building application.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Technically, the system integrates procedural terrain generation with dynamic rendering techniques to create, interactive landscapes. It uses Perlin noise to determine the natural distribution of various biomes, such as land and water, ensuring each terrain generation is different with realistic variability. Additionally, it employs grid manipulation to introduce structured elements like paths and borders by overwriting default terrain states. Visual rendering is context-sensitive, using a lookup table to adjust tiles based on adjacent cells for transitions. Furthermore, the system features weather effects, such as animated raindrops, enhancing the realism and visual engagement of the environment. This approach allows for the creation of both naturalistic and structured terrains.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>The hardest thing in this whole assignment were the instructions and understanding what exactly I had to do. Because this process took so long I could not be as creative as I could have been. I did have fun with this assignment and made the most out of what I learned. Hopefully I start the next assignment on time so I can distribute the work evenly.</p>
 			</div>
 
 		</section>
