@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 4 - Infinite Worlds - River Flow</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->    <script type="text/javascript" src="../js/site.js" DEFER></script>   
+    <script src="js/xxhash.min.js" defer></script>
+    <script src="js/sketch.js" defer></script>
+    <script src="js/project.js" defer></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 4 - Infinite Worlds - Fish Rumble</h1>
+
+			<div class="minor-section">
+                <div id="canvas-container"></div>
+                   <div class="fullscreen-box">
+                       <button id="fullscreen">Fullscreen</button>
+                   </div>
+               </div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>This world made up of tiles and animated fish. It generates a grid of tiles with varying colors, simulating water. The tiles can shake and change color when clicked, with neighboring tiles also being affected. Meanwhile, fish swim around the screen, occasionally spawning more fish over time, adding dynamic movement to the scene. The overall effect is a lively, interactive visual display.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>This code defines a visual simulation of a world made up of tiles and animated fish. It initializes an array of fish objects and, through a world key, sets a seed to generate consistent noise and random values. Clicking a tile makes it shake and change color, also affecting neighboring tiles with reduced shaking strength. The code manages these states through several global structures. Before each frame is drawn, fish states are updated, and new fish spawn periodically. Tiles are drawn with potential shaking effects, and fish are drawn as ellipses with oscillating fins and circular eyes. The result is a dynamic and interactive display.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>Out of all the generators this one was the most fun to work on especially designing the fishes. Even getting the earthquake down was fun and this generator challenged me the most in terms of complexity.
+				</p>
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>

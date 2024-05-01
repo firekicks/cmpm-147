@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 4 - Infinite Worlds - River Flow</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->    <script type="text/javascript" src="../js/site.js" DEFER></script>   
+    <script src="js/xxhash.min.js" defer></script>
+    <script src="js/sketch.js" defer></script>
+    <script src="js/project.js" defer></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 4 - Infinite Worlds - Birds in the Forest</h1>
+
+			<div class="minor-section">
+                <div id="canvas-container"></div>
+                   <div class="fullscreen-box">
+                       <button id="fullscreen">Fullscreen</button>
+                   </div>
+               </div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>This code creates a visual simulation of a world consisting of a grid of tiles and animated birds. It features a background of green tiles, simulating foliage, and introduces several bird types that fly around the screen, displaying behaviors like flocking and speeding up when near rain or clicked tiles. The simulation introduces new birds periodically, adding dynamic movement and variety to the display, which also features a cohesive interplay between birds and the tile-based environment.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>This code creates a visual simulation of a world consisting of a grid of tiles and animated birds. It defines several global variables, including worldSeed for generating consistent noise and random values, an array of Bird objects, and objects to store information about tile interactions, such as clicks, rain effects, and timestamps. The simulation begins by initializing 10 birds, each with a different type. Before each frame is drawn, the background is rendered as a grid of green tiles with colors based on noise values. Birds are then updated, with flocking behavior applied to them to adjust their speed. The simulation also periodically introduces new birds. Tiles can be clicked to induce a rain effect, which affects both the tile's appearance and nearby birds' speeds, as well as potentially applying the effect to neighboring tiles. Birds are drawn in detail, with body, wings, head, eyes, and beak, and then rendered on-screen after each frame.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>This generator was by far the most annoying to deal with. I could not figure out how to get the rain animation down and so I pivoted and on click some of the birds speeds and direction is changed. I did not work with anyone on this project, I did use ChatGPT.
+				</p>
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>

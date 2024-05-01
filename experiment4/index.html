@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 4 - Infinite Worlds - River Flow</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->    <script type="text/javascript" src="../js/site.js" DEFER></script>   
+    <script src="js/xxhash.min.js" defer></script>
+    <script src="js/sketch.js" defer></script>
+    <script src="js/project.js" defer></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 4 - Infinite Worlds - Sand Oasis</h1>
+
+			<div class="minor-section">
+                <div id="canvas-container"></div>
+                   <div class="fullscreen-box">
+                       <button id="fullscreen">Fullscreen</button>
+                   </div>
+               </div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>In summary, this code appears to be implementing a dynamic, interactive desert tile map. Tiles can show variations in sand color, randomly spawn cacti, or reveal oases when clicked. The design combines procedural generation (via noise functions and random events) with interactive elements like clicking to create a visually interesting and engaging desert scene. The trees are meant to have fruit on them and bugs flying around them to make them more lively.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>The desert landscape is procedurally generated using a hash-based seed, which initializes noise and random number generators for deterministic variations. Tiles can spawn cacti with a 2% chance, which have a timer for their presence. Clicking on a tile triggers a visual effect where an oasis water feature appears, unless there's a cactus on it. The shifting sand effect is achieved by incrementing a global duneOffset variable, which modifies the noise pattern for each tile's sand color. The map maintains global states for cactus timers and click durations, supporting interactive gameplay elements. On click there will be a little oasis that spawns in the desert.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>This was my first attempt at making the generator and it was the longest. The other two were much easier after some time. I did enjoy this process and it was fun figuring the logic of how to implement the oasis and cacti. This assignment was done alone and I used ChatGPT.
+				</p>
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>
